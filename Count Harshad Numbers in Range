@@ -1,0 +1,32 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+         int a = sc.nextInt();  
+        int b = sc.nextInt(),count=0,temp=a,sum=0;  
+     
+        while (a <= b) {
+            temp=a;
+            sum=0;
+            while (temp > 0) {
+                sum = sum + (temp % 10);
+                temp = temp / 10;
+            }
+            
+            if (sum != 0 && a % sum == 0) {
+                count++;
+            }
+            
+            a++;
+        }
+        
+        System.out.println(count);
+    }
+}
+
+
+
+       
