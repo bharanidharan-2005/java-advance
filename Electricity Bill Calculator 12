@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int ans=0;
+        if(a<=100){
+            ans=a*5;
+            System.out.println(ans);
+        }
+        else if(a>100&&a<200){
+            ans=500;
+            a=a-100;
+            ans=(ans+(a*7));
+            System.out.println(ans);
+        }
+        else{
+            ans=1200;
+            a=a-200;
+            ans=(ans+(a*10));
+            System.out.println(ans);
+        }
+    }
+}
