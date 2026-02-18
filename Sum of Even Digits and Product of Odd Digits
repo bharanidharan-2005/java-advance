@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt(),rem=0,sum=0,prod=1;
+        while(n!=0){
+            rem=n%10;
+       
+            if(rem%2==0){
+               sum=sum+rem;
+            }
+            else{
+                prod=prod*rem;
+            }
+            n=n/10;
+        }
+        System.out.print(sum+" "+prod);
+    }}
