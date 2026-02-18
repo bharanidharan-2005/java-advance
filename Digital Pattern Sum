@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt(),rem=0,sum=0;
+       while(a>=10){  
+           sum=0;
+           while(a!=0){   
+               rem=a%10;   
+               sum+=rem;     
+               a/=10;       
+           }
+           a=sum;   
+       }
+        System.out.println(a);
+    }
+}
